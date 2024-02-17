@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "rust_calculator_backend": {
+      "candid": "src/rust_calculator_backend/rust_calculator_backend.did",
+      "package": "rust_calculator_backend",
+      "type": "rust"
+    },
+    "rust_calculator_frontend": {
+      "dependencies": [
+        "rust_calculator_backend"
+      ],
+      "source": [
+        "src/rust_calculator_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "rust_calculator_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
